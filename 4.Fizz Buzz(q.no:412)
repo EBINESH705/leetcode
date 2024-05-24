@@ -1,0 +1,24 @@
+class Solution {
+    public List<String> fizzBuzz(int n) {
+        List<String> ans = new ArrayList<String>(n);
+        for (int i = 1, fiz = 0, buz = 0; i <= n; i++) {
+            fiz++;
+            buz++;
+            if (fiz == 3 && buz == 5) {
+                ans.add("FizzBuzz");
+                fiz = 0;
+                buz = 0;
+            } else if (fiz == 3) {
+                ans.add("Fizz");
+                fiz = 0;
+            } else if (buz == 5) {
+                ans.add("Buzz");
+                buz = 0;
+            } else {
+                ans.add(String.valueOf(i));
+            }
+
+        }
+        return ans;
+    }
+}
