@@ -12,7 +12,7 @@ class Solution {
                 }
             }
             if (!found) {
-                result[index++] = nums[i];
+                result[index++] =nums[i];
             }
         }
         return result;
